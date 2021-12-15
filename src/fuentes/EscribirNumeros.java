@@ -34,8 +34,12 @@ public class EscribirNumeros {
         largo = numeroIngresado.length();
 
         if (largo == 3) {
-            salida = analizar.escribirTrio(numeroIngresado, true);  // el arg true-
-            // se utiliza cuando no hay sustantivo despues del 1 para no terminar en "un" y si en "uno"
+            if (numeroIngresado.equals("000")) {
+                salida = "cero";
+            }else{
+                salida = analizar.escribirTrio(numeroIngresado, true); // el arg true-
+                 // se utiliza cuando no hay sustantivo despues del 1 para no terminar en "un" y si en "uno"
+            }   
         } else {
             int periodo = largo;
 

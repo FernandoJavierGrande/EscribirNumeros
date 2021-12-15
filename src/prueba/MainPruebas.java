@@ -18,6 +18,6 @@ public class MainPruebas {
         EscribirNumeros escribir = new EscribirNumeros();
         
         
-        System.out.println(escribir.EscribirNumero(12515223689L));
+        System.out.println(escribir.EscribirNumero(256852415000L));
     }
 }
